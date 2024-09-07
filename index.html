@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="gurl.jpg" alt="profile pic" width="15%" />
+    </header>
+
+    <section id="info">
+      <h2>Personal Info &#129493;</h2>
+      <h3>Maryam latif</h3>
+      <p>Contact Detail &#128193;:</p>
+      <p>Contact &#128231;: maryamlatif9@gmail.com</p>
+      <p>Address &#128205;:Old Golimar Rexar Lane 02</p>
+      <p>Date of Birth &#128197;:14-09-1999</p>
+      <p>Phone no &#128222;:03322445698</p>
+    </section>
+
+    <section id="study">
+      <h2>Education &#128214;</h2>
+
+      <ul>
+        <li>Matric (2015) C.D.G.K SCHOOL</li>
+        <li>Intermediate (2017) S.M.B Fatima jinnah College</li>
+        <li>Graduation (2020) Karachi University</li>
+      </ul>
+    </section>
+
+    <section id="skill">
+      <h2>Expertise Skill &#128640;</h2>
+        <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>TypeScript</li>
+        <li>JavaScript</li>
+        <li>MS Office</li>
+        <li>Next js</li>
+        <li>React js</li>
+        <li>Time manaegement</li>
+        </ul>
+    </section>
+
+    <section id="work">
+      <h2>Work Experience &#128188;</h2>
+        <ul>
+        <li>Teaching (1year) White Rose Grammar School</li>
+        <li>Canva Expertise (6month)</li>
+        <li>Graphic Designer (2year)</li>
+        <li>volunteer or internship experience (2year)</li>
+       </ul>
+    </section>
+
+    <section id="language">
+      <h2>Languages &#128221;</h2>
+        <ul>
+        <li>English</li>
+        <li>Urdu</li>
+        <li>Punjabi</li>
+       </ul>
+    </section>   
+
+    <button id="toggleSkill">Toggle-skill</button> 
+
+
+
+      
+    <!-- INFO SET -->
+
+    <h1 id="a">Dynamic Resume Builder</h1>
+    <form id="resume-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </fieldset>
+
+      <!-- Education Set -->
+      <fieldset>
+        <legend>Education</legend>
+        <label for="education">Education Details:</label>
+        <textarea id="education" name="education" rows="5" required></textarea>
+      </fieldset>
+
+          <!-- Experience Set --> 
+       <fieldset>
+        <legend>Work Experience</legend>
+        <label for="experience">Work Experience:</label>  
+
+        <textarea
+          id="experience"
+          name="experience"
+          rows="5"
+          required
+        ></textarea> 
+       </fieldset>
+       <!-- Skill Set -->
+      <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Skills:</label>
+        <textarea id="skills" name="skill" rows="5" required></textarea>
+      </fieldset> 
+
+             <!-- Button Set -->
+      <button type="submit">Generate Resume</button>
+    </form>
+    <div id="resume-output"></div>
+    <button id="save-reset">Save </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
